@@ -1,0 +1,169 @@
+./cross_platform -s 0.3 512 1024 2048 4096
+Using ARM NEON SIMD instructions
+
+Selected methods: apple_accelerate async_simd base best block my_optimized neon_omp simd transpose transpose_block 
+
+Matrix multiplication performance comparison (512 x 512 matrices):
+- apple_accelerate
+Elapsed time: 5 ms
+Trace: 63133.9
+
+- async_simd
+Elapsed time: 4 ms
+Trace: 63133.9
+
+- base
+Elapsed time: 154 ms
+Trace: 63133.9
+
+- best
+Elapsed time: 0 ms
+Trace: 63133.9
+
+- block
+Elapsed time: 101 ms
+Trace: 63133.9
+
+- my_optimized
+Elapsed time: 2 ms
+Trace: 63133.9
+
+- neon_omp
+Elapsed time: 6 ms
+Trace: 63133.9
+
+- simd
+Elapsed time: 10 ms
+Trace: 63133.9
+
+- transpose
+Elapsed time: 87 ms
+Trace: 63133.9
+
+- transpose_block
+Elapsed time: 55 ms
+Trace: 63133.9
+
+Matrix multiplication performance comparison (1024 x 1024 matrices):
+- apple_accelerate
+Elapsed time: 2 ms
+Trace: 252536
+
+- async_simd
+Elapsed time: 15 ms
+Trace: 252536
+
+- base
+Elapsed time: 1196 ms
+Trace: 252536
+
+- best
+Elapsed time: 1 ms
+Trace: 252536
+
+- block
+Elapsed time: 985 ms
+Trace: 252536
+
+- my_optimized
+Elapsed time: 19 ms
+Trace: 252536
+
+- neon_omp
+Elapsed time: 11 ms
+Trace: 252536
+
+- simd
+Elapsed time: 92 ms
+Trace: 252536
+
+- transpose
+Elapsed time: 831 ms
+Trace: 252536
+
+- transpose_block
+Elapsed time: 451 ms
+Trace: 252536
+
+Matrix multiplication performance comparison (2048 x 2048 matrices):
+- apple_accelerate
+Elapsed time: 12 ms
+Trace: 1.0103e+06
+
+- async_simd
+Elapsed time: 114 ms
+Trace: 1.0103e+06
+
+- base
+Elapsed time: 17764 ms
+Trace: 1.0103e+06
+
+- best
+Elapsed time: 13 ms
+Trace: 1.0103e+06
+
+- block
+Elapsed time: 8141 ms
+Trace: 1.0103e+06
+
+- my_optimized
+Elapsed time: 127 ms
+Trace: 1.0103e+06
+
+- neon_omp
+Elapsed time: 83 ms
+Trace: 1.0103e+06
+
+- simd
+Elapsed time: 849 ms
+Trace: 1.0103e+06
+
+- transpose
+Elapsed time: 7100 ms
+Trace: 1.0103e+06
+
+- transpose_block
+Elapsed time: 3678 ms
+Trace: 1.0103e+06
+
+Matrix multiplication performance comparison (4096 x 4096 matrices):
+- apple_accelerate
+Elapsed time: 77 ms
+Trace: 4.04097e+06
+
+- async_simd
+Elapsed time: 791 ms
+Trace: 4.04098e+06
+
+- base
+Elapsed time: 242116 ms
+Trace: 4.04097e+06
+
+- best
+Elapsed time: 75 ms
+Trace: 4.04097e+06
+
+- block
+Elapsed time: 62827 ms
+Trace: 4.04098e+06
+
+- my_optimized
+Elapsed time: 889 ms
+Trace: 4.04098e+06
+
+- neon_omp
+Elapsed time: 763 ms
+Trace: 4.04097e+06
+
+- simd
+Elapsed time: 6350 ms
+Trace: 4.04098e+06
+
+- transpose
+Elapsed time: 58038 ms
+Trace: 4.04097e+06
+
+- transpose_block
+Elapsed time: 28878 ms
+Trace: 4.04098e+06
+
