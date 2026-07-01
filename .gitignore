@@ -1,0 +1,43 @@
+# 编译产物
+*.o
+*.out
+*.exe
+
+# 调试符号
+*.dSYM/
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# IDE
+.vscode/
+.idea/
+
+# 编译生成的二进制（精确匹配已知的可执行文件名）
+/cross_platform
+/main
+/main24
+/main_neon
+/main_parallel
+/main_simd
+/matrix_test
+/non_unroll_cross_platform
+/parallel
+/test
+/test_block_simple
+/test_cross_platform
+/test_cross_platform_debug
+/test_matrix_blocks
+/test_neon_advanced
+/test_neon_omp
+/test_neon_simple
+/test_optimized
+/unroll_cross_platform
+/m2
+/test_metal
+matrix_plot/
+# 旧版 Makefile 目标产物
+报告.docx
+报告.pages
+test_matmul
